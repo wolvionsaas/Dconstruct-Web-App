@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D'Construct - Building Tomorrow's Visions Today</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="projects.html" class="nav-link">Projects</a></li>
+                        <li><a href="#services" class="nav-link">Services <span class="nav-caret">▾</span></a></li>
+                        <li><a href="about.html" class="nav-link">About Us</a></li>
+                        <li><a href="carrer.html" class="nav-link">Career<span class="nav-caret">▾</span></a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mega Navigation Overlay -->
+    <div class="nav-overlay" id="navOverlay">
+        <div class="nav-overlay-inner">
+            <div class="nav-overlay-left">
+                <br><br><br><br>
+                <img src="images/final logo.png" alt="D'Construct Logo" class="nav-overlay-logo">
+            </div>
+            <div class="nav-overlay-center">
+                <div class="nav-overlay-column">
+                    
+                </div>
+               <!-- <div class="nav-overlay-column">
+                    <h3 class="nav-overlay-heading">Practice</h3>
+                    <a href="#about" class="nav-overlay-link">About Us</a>
+                    <a href="#services" class="nav-overlay-link">Workshops</a>
+                </div>
+                <div class="nav-overlay-column">
+                    <h3 class="nav-overlay-heading">People</h3>
+                    <a href="#about" class="nav-overlay-link">Team</a>
+                    <a href="#services" class="nav-overlay-link">Careers</a>
+                </div>
+                <div class="nav-overlay-column">
+                    <h3 class="nav-overlay-heading">Resources</h3>
+                    <a href="#statement" class="nav-overlay-link">Articles</a>
+                </div>
+                <div class="nav-overlay-column nav-overlay-column-contact">
+                    <h3 class="nav-overlay-heading">Contact</h3>
+                    <a href="#contact" class="nav-overlay-link">Get in touch</a>
+                </div> -->
+            </div>
+            <div class="nav-overlay-bottom">
+                <div class="nav-overlay-search">
+                    <input type="text" placeholder="Search..." class="nav-search-input">
+                    <span class="nav-search-arrow">→</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-slider">
+            <div class="hero-slide active">
+                <div class="hero-image" style="background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80');"></div>
+            </div>
+            <div class="hero-slide">
+                <div class="hero-image" style="background-image: url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1920&q=80');"></div>
+            </div>
+            <div class="hero-slide">
+                <div class="hero-image" style="background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80');"></div>
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <img src="images/final logo.png" alt="D'Construct" class="hero-logo-large" />
+        </div>
+        <div class="hero-indicators">
+            <span class="indicator active" data-slide="0"></span>
+            <span class="indicator" data-slide="1"></span>
+            <span class="indicator" data-slide="2"></span>
+        </div>
+    </section>
+
+    <!-- Statement Section -->
+    <section class="statement-section" id="statement">
+        <div class="statement-container">
+            <div class="statement-content">
+                <p class="statement-line statement-line-1">
+                    <span class="word">D'Construct</span>
+                    <span class="word">is</span>
+                    <span class="word">a</span>
+                    <span class="word">distinguished</span>
+                    <span class="word">construction</span>
+                    <span class="word">practice.</span>
+                </p>
+                <p class="statement-line statement-line-2">
+                    <span class="word">We</span>
+                    <span class="word">challenge</span>
+                    <span class="word">the</span>
+                    <span class="word">boundaries</span>
+                    <span class="word">of</span>
+                    <span class="word">conventional</span>
+                    <span class="word">design</span>
+                    <span class="word">to</span>
+                    <span class="word">create</span>
+                    <span class="word">great</span>
+                    <span class="word">buildings</span>
+                    <span class="word">for</span>
+                    <span class="word">people,</span>
+                    <span class="word">now</span>
+                    <span class="word">and</span>
+                    <span class="word">in</span>
+                    <span class="word">the</span>
+                    <span class="word">future.</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Projects</h2>
+                <p class="section-subtitle">Showcasing excellence in every build</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-aos="fade-up" 
+                     data-project-title="Modern Hospital"
+                     data-project-image="images/WhatsApp Image 2026-01-09 at 2.49.08 AM (1).jpeg"
+                     data-project-description="Modern Hospital with contemporary design"
+                     data-project-details="A sleek modern healthcare façade characterized by vertical emphasis, clean panelized surfaces, and bold identity branding. The design balances glass and solid cladding to convey transparency and reliability, while horizontal bands and subtle lighting add visual rhythm. A clear, sheltered entrance ensures accessibility, reinforcing a professional and patient-centric hospital environment."
+                     
+                     data-project-year="2025">
+                    <div class="project-image">
+                        <img src="images/WhatsApp Image 2026-01-09 at 2.49.08 AM (1).jpeg" alt="Modern Hospital" class="hospital-image">
+                        <div class="project-overlay">
+                            <h3 class="project-title">Modern Hospital</h3>
+                            <p class="project-description">Modern Hospital with contemporary design</p>
+                            <a href="#" class="project-link" data-project-modal>View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100"
+                     data-project-title="Hospital Building"
+                     data-project-image="images/hospital2.jpeg"
+                     data-project-description="Modern Hospital Design"
+                     data-project-details="A contemporary healthcare building designed with clarity, hygiene, and accessibility at its core. The façade uses clean lines, modular proportions, and a restrained white-grey palette to convey trust and professionalism. Clear signage, generous glazing for daylight, and a defined entrance ensure easy wayfinding, while minimal detailing reinforces a calm, efficient hospital environment"
+                     data-project-location="Location: Medical District"
+                     data-project-year="2025">
+                    <div class="project-image">
+                        <img src="images/hospital2.jpeg" alt="Hospital Building" class="hospital-image">
+                        <div class="project-overlay">
+                            <h3 class="project-title">Hospital Building</h3>
+                            <p class="project-description">Modern Hospital Design</p>
+                            <a href="#" class="project-link" data-project-modal>View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200"
+                     data-project-title="School"
+                     data-project-image="images/school building.jpeg"
+                     data-project-description="World-class School Architecture"
+                     data-project-details="A vibrant contemporary institutional design that reflects learning through architecture. The façade uses clean white volumes accented with colorful vertical fins and panels, creating a playful yet disciplined rhythm suited for a school environment. Large openings ensure ample daylight, while structured shading elements, strong horizontality, and a clear central entry promote safety, clarity, and an engaging academic atmosphere"
+                     
+                     data-project-year="2025">
+                    <div class="project-image">
+                        <img src="images/school building.jpeg" alt="School">
+                        <div class="project-overlay">
+                            <h3 class="project-title">School</h3>
+                            <p class="project-description">World-class School Architecture</p>
+                            <a href="#" class="project-link" data-project-modal>View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300"
+                     data-project-title="School Building"
+                     data-project-image="images/school building2.jpeg"
+                     data-project-description="School Building Architecture"
+                     data-project-details="A simple contemporary institutional school design focused on functionality and clarity. The façade uses clean geometric forms, balanced window proportions, and a neutral color palette to create a calm, disciplined learning environment. A prominent glazed entrance enhances visibility and safety, while minimal detailing and soft landscaping support an organized, student-friendly campus character"
+                     
+                     data-project-year="2025">
+                    <div class="project-image">
+                        <img src="images/school building2.jpeg" alt="School Building">
+                        <div class="project-overlay">
+                            <h3 class="project-title">School Building</h3>
+                            <p class="project-description">School Building Architecture</p>
+                            <a href="#" class="project-link" data-project-modal>View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="400"
+                     data-project-title="Bunglow"
+                     data-project-image="images/bunglow.jpeg"
+                     data-project-description="Luxury Bunglow"
+                     data-project-details="A stately classical revival façade defined by strong symmetry, fluted columns, and tall arched openings. The composition balances solid wall mass with elegant glazing, while wrought-iron balconies and warm accent lighting add depth and richness. A restrained palette and formal landscaping reinforce a timeless, palace-like elegance."
+                     
+                     data-project-year="2025">
+                    <div class="project-image">
+                        <img src="images/bunglow.jpeg" alt="Bunglow">
+                        <div class="project-overlay">
+                            <h3 class="project-title">Bunglow</h3>
+                            <p class="project-description">Luxury Bunglow</p>
+                            <a href="#" class="project-link" data-project-modal>View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="500"
+                     data-project-title="Bunglow"
+                     data-project-image="images/Bunglow2.jpeg"
+                     data-project-description="Luxury Bunglow Architecture"
+                     data-project-details="A refined contemporary tropical residence defined by clean horizontal lines, flat overhangs, and a seamless indoor–outdoor connection. The composition balances concrete, wood, and glass to create warmth within a modern framework, while water bodies, layered terraces, and lush landscaping enhance a resort-like, tranquil living experience."
+                     
+                     data-project-year="2025">
+                    <div class="project-image">
+                        <img src="images/Bunglow2.jpeg" alt="Bunglow">
+                        <div class="project-overlay">
+                            <h3 class="project-title">Bunglow</h3>
+                            <p class="project-description">Luxury Bunglow Architecture</p>
+                            <a href="#" class="project-link" data-project-modal>View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Expertise Section -->
+    <section class="design-expertise" id="expertise">
+        <div class="expertise-container">
+            <h2 class="expertise-title">Design Expertise</h2>
+            <div class="expertise-separator"></div>
+            <div class="expertise-content">
+                <div class="expertise-left">
+                    <p class="expertise-intro">
+                        Pushing beyond traditional construction boundaries, D'Construct crafts visionary buildings, infrastructure, and spaces centred around people and their wellbeing.
+                    </p>
+                    <div class="venn-diagram-wrapper">
+                        <div class="venn-label">
+                            <span class="venn-company-name">D'Construct</span>
+                            <svg class="venn-arrow" viewBox="0 0 100 50" width="80" height="40">
+                                <path d="M 10 25 Q 30 15, 50 25 T 90 25" stroke="#1a1a1a" stroke-width="2" fill="none"/>
+                                <polyline points="80,20 90,25 80,30" stroke="#1a1a1a" stroke-width="2" fill="none"/>
+                            </svg>
+                        </div>
+                        <div class="venn-diagram">
+                            <svg viewBox="0 0 500 500" class="venn-svg">
+                                <!-- Overlapping center area (muted orange/gold) - drawn first so circles appear on top -->
+                                <circle cx="250" cy="250" r="80" fill="#d4af37" fill-opacity="0.25" class="venn-center"/>
+                                
+                                <!-- Architecture + Interiors Circle (top-left, solid) -->
+                                <circle cx="180" cy="180" r="110" fill="none" stroke="#1a1a1a" stroke-width="2.5" class="venn-circle venn-solid"/>
+                                <text x="100" y="100" text-anchor="start" font-size="12" fill="#1a1a1a" font-weight="500" font-family="'Open Sans', sans-serif">architecture + interiors</text>
+                                
+                                <!-- Urban Design Circle (top-right, dashed) -->
+                                <circle cx="320" cy="180" r="110" fill="none" stroke="#1a1a1a" stroke-width="2.5" stroke-dasharray="6,4" class="venn-circle venn-dashed"/>
+                                <text x="400" y="100" text-anchor="end" font-size="12" fill="#1a1a1a" font-weight="500" font-family="'Open Sans', sans-serif">urban design</text>
+                                
+                                <!-- Landscape Architecture Circle (bottom-left, dotted) -->
+                                <circle cx="180" cy="320" r="110" fill="none" stroke="#1a1a1a" stroke-width="2.5" stroke-dasharray="2,4" class="venn-circle venn-dotted"/>
+                                <text x="100" y="420" text-anchor="start" font-size="12" fill="#1a1a1a" font-weight="500" font-family="'Open Sans', sans-serif">landscape architecture</text>
+                                
+                                <!-- Strategic Planning Circle (bottom-right, dotted) -->
+                                <circle cx="320" cy="320" r="110" fill="none" stroke="#1a1a1a" stroke-width="2.5" stroke-dasharray="2,4" class="venn-circle venn-dotted"/>
+                                <text x="400" y="420" text-anchor="end" font-size="12" fill="#1a1a1a" font-weight="500" font-family="'Open Sans', sans-serif">strategic planning</text>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="expertise-right">
+                    <p class="expertise-description">
+                        Multi-disciplinary construction, cross-sector expertise that delivers building and infrastructure benefits for all.
+                    </p>
+                    <a href="#about" class="expertise-cta">
+                        About D'Construct
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <h2 class="section-title">About D'Construct</h2>
+                    <p class="about-intro">
+                        We operate at the intersection of planning, precision, and practicality, offering clients a single, accountable platform from concept to completion. Our approach removes fragmentation between design and construction, enabling clarity in decision-making, control over costs, and consistency in execution
+                    </p>
+                    <div class="about-values">
+                        <div class="value-item">
+                            <h3>Our Mission</h3>
+                            <p>To deliver exceptional construction services that exceed client expectations while maintaining the highest standards of quality, safety, and sustainability.</p>
+                        </div>
+                        <div class="value-item">
+                            <h3>Our Vision</h3>
+                            <p>Our approach is shaped by a holistic understanding of how design, execution, and context interact.
+Each service is conceived to complement the other, reflecting a thorough understanding of industry standards, regulations, and on-ground realities.
+We believe architecture does not exist in isolation —
+and neither does our work</p>
+                        </div>
+                        <div class="value-item">
+                            <h3>Our Values</h3>
+                            <p>Excellence, Integrity, Innovation, Safety, and Client-Centricity guide every project we undertake.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image" data-aos="fade-left">
+                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80" alt="About D'Construct">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Comprehensive construction solutions</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Construction Management</h3>
+                    <p class="service-description">End-to-end project management ensuring timely delivery and quality execution.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="9" y1="3" x2="9" y2="21"></line>
+                            <line x1="3" y1="9" x2="21" y2="9"></line>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Design & Build</h3>
+                    <p class="service-description">Integrated design and construction services for seamless project delivery.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Renovation</h3>
+                    <p class="service-description">Transform existing spaces with expert renovation and remodeling services.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Consulting</h3>
+                    <p class="service-description">Expert advice on project feasibility, planning, and construction strategies.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                            <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Project Planning</h3>
+                    <p class="service-description">Comprehensive planning and scheduling for efficient project execution.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Quality Assurance</h3>
+                    <p class="service-description">Rigorous quality control and assurance throughout the construction process.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's discuss your next project</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-form-wrapper" data-aos="fade-right">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="6" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info" data-aos="fade-left">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Address</h4>
+                            <p>21-B, 2nd Floor, Narmadapuram Rd.
+                            <br>Vidya Nagar, Bhopal, MP, 462026
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <a href="tel:+919109529312" class="contact-link">+919109529312</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:dconstruct079@gmail.com" class="contact-link">dconstruct079@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>D'Construct</h3>
+                    
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/share/1BY2aeteij/" class="social-link" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a href="https://wa.me/919109529312" class="social-link" aria-label="WhatsApp">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M20.52 3.48A11.78 11.78 0 0 0 12.02 0C5.4 0 .02 5.37.02 12c0 2.1.55 4.05 1.52 5.76L0 24l6.4-1.67A11.86 11.86 0 0 0 12.02 24c6.62 0 12-5.37 12-12s-5.38-12-12-12zM12.02 22a9.9 9.9 0 0 1-5.04-1.39l-.36-.21-3.8.99 1.02-3.7-.25-.38A9.92 9.92 0 1 1 22 12.02 9.98 9.98 0 0 1 12.02 22zm5.61-7.34c-.31-.16-1.84-.91-2.12-1.02-.29-.11-.5-.16-.71.16-.21.31-.82 1.02-1.01 1.23-.19.21-.37.24-.68.08-.31-.16-1.31-.48-2.49-1.53-.92-.82-1.54-1.83-1.72-2.14-.18-.31-.02-.48.14-.64.15-.15.31-.37.47-.56.16-.19.21-.32.32-.53.11-.21.05-.4-.03-.56-.08-.16-.71-1.71-.97-2.35-.26-.63-.52-.55-.71-.56l-.6-.01c-.19 0-.5.07-.76.37-.26.31-1 1-1 2.45s1.02 2.84 1.17 3.04c.16.21 2.01 3.06 4.86 4.28.68.29 1.21.46 1.63.59.69.22 1.31.19 1.8.11.55-.08 1.84-.75 2.1-1.48.26-.73.26-1.36.18-1.48-.08-.11-.29-.18-.6-.34z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/_dconstruct_?igsh=MXNsdHUxZ2Jub2Q4Zw==" class="social-link" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 D'Construct. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Details Modal -->
+    <div class="project-modal" id="projectModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div class="modal-image">
+                <img id="modalProjectImage" src="" alt="Project Image">
+            </div>
+            <div class="modal-body">
+                <h2 id="modalProjectTitle" class="modal-title"></h2>
+                <div class="modal-meta">
+                    <span id="modalProjectLocation" class="modal-location"></span>
+                    <span id="modalProjectYear" class="modal-year"></span>
+                </div>
+                <p id="modalProjectDescription" class="modal-description"></p>
+                <div class="modal-details">
+                    <h3>Project Details</h3>
+                    <p id="modalProjectDetails"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    var formData = new FormData(this);
+
+    fetch("https://script.google.com/macros/s/AKfycbz0yus7QwTySkUyhpldvC_HdEbN7GHIecreEmBBMa2BzyqZBN7WXErbFvDYsooQGnHd/exec", {
+        method: "POST",
+        body: formData
+    })
+    .then(response => response.text())
+    .then(data => {
+        alert("Message Sent Successfully!");
+        document.getElementById("contactForm").reset();
+    })
+    .catch(error => {
+        alert("Error! Please try again.");
+    });
+});
+</script>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
